@@ -1,0 +1,26 @@
+2021-01-21
+
+Review Class
+
+Cucumber is a framework/tool that supports BDD
+
+Cucumber uses gherkin language
+given - pre condition
+when - action
+then - result
+and - continue any step
+but
+
+Feature high level feature/functionality of the system
+Scenario
+
+Background - common precondition steps inside 1 feature file can be defined using Background Keyword
+Hooks - 2 hooks in cucumber (@Before, @After) - will run before and after every scenario from ALL feature files
+
+cucumber supports DDT:
+
+scenario outline - executes same sceanrio multiple times based on the data provided in Examples Table
+
+cucumber datatable - execute same STEP multiples times based on data inside cucumber datatable
+
+But if data becomes large --> we need to use Excel

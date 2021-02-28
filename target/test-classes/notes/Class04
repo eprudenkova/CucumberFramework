@@ -1,0 +1,10 @@
+2021-01-20
+
+Class 4
+
+execute from terminal:
+pwd - print working directory
+ls - list
+cd -
+mvn clean
+mvn test
