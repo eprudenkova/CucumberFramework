@@ -25,6 +25,10 @@ Feature: Syntax HRMS API Workflow
     Then the status code is 200
     And retrieved EmployeeID "employee[0].employee_id" matches the globally stored EmployeeID
     And the retrieved data matched the data used to create the Employee
+    And the retrieved data at "employee" matches the data used to create the employee with employee ID "employee[0].employee_id"
+      | emp_firstname | emp_middle_name | emp_lastname | emp_birthday | emp_gender | emp_job_title | emp_status |
+      | Anna          | W               | Black        | 1990-01-01   | Female     | IT Analyst    | Employee   |
+
 
   Scenario: Update the created Employee
     Given a request is prepared to update the Employee

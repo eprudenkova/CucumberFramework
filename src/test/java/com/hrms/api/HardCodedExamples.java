@@ -1,4 +1,4 @@
-package com.hrms.api.Testing;
+package com.hrms.api;
 
 import io.restassured.RestAssured;//baseURI
 import io.restassured.path.json.JsonPath;

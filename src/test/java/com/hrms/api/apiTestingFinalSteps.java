@@ -1,6 +1,13 @@
-package com.hrms.api.Testing;
+package com.hrms.api;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.hrms.utils.APICommonMethods;
 import com.hrms.utils.ApiConstants;
+import com.hrms.utils.ApiPayloadConstants;
+import com.hrms.utils.CommonMethods;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
 import io.restassured.path.json.JsonPath;
@@ -9,6 +16,9 @@ import io.restassured.specification.RequestSpecification;
 import net.minidev.json.JSONObject;
 import org.junit.Assert;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -26,23 +36,58 @@ public class apiTestingFinalSteps {
     static String partially_updated_employee_first_name;
 
 
-//    -----------------------------Scenario: Creating an Employee
+    //    -----------------------------Scenario: Creating an Employee
     @Given("a request is prepared to create an employee")
     public void a_request_is_prepared_to_create_an_employee() {
         //preparing request to create an employee
         request = given()
                 .header(ApiConstants.CONTENT_TYPE, ApiConstants.APP_JSON)
-                .header(ApiConstants.AUTH, generateTokenSteps.token);
+                .header(ApiConstants.AUTH, generateTokenSteps.token)
+                //using method from APICommonMethods
+                .body(APICommonMethods.readJSON(ApiConstants.CREATE_EMPLOYEE_JSON));
+//                //using method from ApiPayloadConstants
+//                .body(ApiPayloadConstants.createEmployeeBody());
 
-        request = request.body("{\n" +
-                "  \"emp_firstname\": \"Anna\",\n" +
-                "  \"emp_lastname\": \"Black\",\n" +
-                "  \"emp_middle_name\": \"W\",\n" +
-                "  \"emp_gender\": \"F\",\n" +
-                "  \"emp_birthday\": \"1990-01-01\",\n" +
-                "  \"emp_status\": \"Employee\",\n" +
-                "  \"emp_job_title\": \"IT Analyst\"\n" +
-                "}");
+//        //using hardcoded method
+//        request = request.body("{\n" +
+//                "  \"emp_firstname\": \"Anna\",\n" +
+//                "  \"emp_lastname\": \"Black\",\n" +
+//                "  \"emp_middle_name\": \"W\",\n" +
+//                "  \"emp_gender\": \"F\",\n" +
+//                "  \"emp_birthday\": \"1990-01-01\",\n" +
+//                "  \"emp_status\": \"Employee\",\n" +
+//                "  \"emp_job_title\": \"IT Analyst\"\n" +
+//                "}");
+
+//        File input = new File("/Users/evgeniya/IdeaProjects/CucumberFramework/src/test/resources/JsonData/createUser.json");
+//
+////        JsonObject createUserData = null;
+//        try {
+//            //parsing the input file into JsonElement
+//            //JSON Element
+//            //"key1":"value","key1":"value"
+//            JsonElement fileElement = JsonParser.parseReader(new FileReader(input));//parseReader() - json text reader, returns JsonElement
+//            //convert in JSON Object where we have multiple keys and values
+//            //JSON Object
+//            //{"key1":"value",
+//            //"key2":"value"}
+//            JsonObject createUserData = fileElement.getAsJsonObject();
+//            //access key message
+//            JsonElement message_element = createUserData.get("Message");
+//            JsonElement employees_element = createUserData.get("Employee");
+//            JsonArray employees_array = createUserData.get("Employee").getAsJsonArray();
+//            JsonElement employee1_element = employees_array.get(0);
+//            JsonObject employee1_object = employee1_element.getAsJsonObject();
+//
+//            System.out.println("Message " + message_element);
+//            System.out.println("Employees element " + employees_element);
+//            System.out.println("Employees array " + employees_array);
+//            System.out.println("(1) Employee from array " + employees_array.get(1));
+//            System.out.println("(0) Employee firstname object " + employee1_object.get("emp_firstname"));
+//
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @When("a POST call is made to create an employee")
@@ -92,13 +137,15 @@ public class apiTestingFinalSteps {
         }
     }
 
-//    --------------------------Scenario: Retrieving the created Employee
+    //    --------------------------Scenario: Retrieving the created Employee
     @Given("a request is prepared to retrieve the created Employee")
     public void a_request_is_prepared_to_retrieve_the_created_Employee() {
-        request = given()
-                .header(ApiConstants.CONTENT_TYPE, ApiConstants.APP_JSON)
-                .header(ApiConstants.AUTH, generateTokenSteps.token)
-                .queryParam("employee_id", employeeID);//.queryParam() is used to read the values ​​from QueryParameters of a URI call.
+
+        request = APICommonMethods.getOneEmployeeRequest(generateTokenSteps.token, employeeID);
+//        request = given()
+//                .header(ApiConstants.CONTENT_TYPE, ApiConstants.APP_JSON)
+//                .header(ApiConstants.AUTH, generateTokenSteps.token)
+//                .queryParam("employee_id", employeeID);//.queryParam() is used to read the values ​​from QueryParameters of a URI call.
     }
 
     @When("a GET call is made to retrieve the created Employee")
@@ -135,8 +182,36 @@ public class apiTestingFinalSteps {
         assertThat(emp_status, equalTo("Employee"));
     }
 
+    @Then("the retrieved data at {string} matches the data used to create the employee with employee ID {string}")
+    public void the_retrieved_data_at_matches_the_data_used_to_create_the_employee_with_employee_ID(String employeeObject, String responseEmployeeID, DataTable dataTable) {
+        //a Map to have the data expected in the response --> from feature file
+        List<Map<String, String>> expectedData = dataTable.asMaps(String.class, String.class);
+        //getting data from the response body
+        List<Map<String, String>> actualData = response.body().jsonPath().get(employeeObject);//could be getList()
+        //loop through the keys in our hardcoded data and get the value
 
-//    -------------------------------Scenario: Update the created Employee
+        int index = 0;
+        for (Map<String, String> map : expectedData) {
+            Set<String> keys = map.keySet();
+
+            //loop through keys and get their value and assert
+            for (String key : keys) {
+
+                String expectedValue = map.get(key);
+                String actualValue = actualData.get(index).get(key);
+                Assert.assertEquals("Value does not match", expectedValue, actualValue);
+//                System.out.println("ACTUALLLLLLLL " + expectedValue);
+//                System.out.println("EXPECTEDDDDDD " + actualValue);
+            }
+            index++;
+        }
+
+        String empID = response.body().jsonPath().getString(responseEmployeeID);
+        Assert.assertTrue("value does not match", empID.contentEquals(employeeID));
+    }
+
+
+    //    -------------------------------Scenario: Update the created Employee
     @Given("a request is prepared to update the Employee")
     public void a_request_is_prepared_to_update_the_Employee() {
 
@@ -173,7 +248,7 @@ public class apiTestingFinalSteps {
     }
 
 
-//    ------------------------Scenario: Retrieving the updated Employee
+    //    ------------------------Scenario: Retrieving the updated Employee
     @Given("a request is prepared to retrieve the updated Employee")
     public void a_request_is_prepared_to_retrieve_the_updated_Employee() {
         request = given()
@@ -190,6 +265,7 @@ public class apiTestingFinalSteps {
 
     @Then("the retrieved Employee_Middle_Name {string} matches the globally stored employee middle name")
     public void the_retrieved_Employee_Middle_Name_matches_the_globally_stored_employee_middle_name(String updatedMiddleName) {
+//        ways to assert
         response.then().assertThat().body(updatedMiddleName, equalTo(updated_employee_middle_name));
 //        Assert.assertEquals("Verification employee middle name", updatedMiddleName, updated_employee_middle_name);
 //
@@ -199,7 +275,7 @@ public class apiTestingFinalSteps {
 //        Assert.assertEquals(actualMiddleName, updated_employee_middle_name);
     }
 
-//    ----------------------------Scenario: Partially updating the Employee
+    //    ----------------------------Scenario: Partially updating the Employee
     @Given("a request is prepared to partially update the Employee")
     public void a_request_is_prepared_to_partially_update_the_Employee() {
 
@@ -232,7 +308,7 @@ public class apiTestingFinalSteps {
         response.then().assertThat().body(partiallyUpdatedFirstname, equalTo(partially_updated_employee_first_name));
     }
 
-//    -----------------------Scenario: Delete the created Employee
+    //    -----------------------Scenario: Delete the created Employee
     @Given("a request is prepared to delete the Employee")
     public void a_request_is_prepared_to_delete_the_Employee() {
         request = given()
@@ -256,7 +332,7 @@ public class apiTestingFinalSteps {
         response.then().assertThat().body(employee_id, equalTo(employeeID));
     }
 
-//    ----------------------------Scenario: Get all Employees
+    //    ----------------------------Scenario: Get all Employees
     @Given("a request is prepared to get all Employees")
     public void a_request_is_prepared_to_get_all_Employees() {
         request = given()
@@ -274,6 +350,8 @@ public class apiTestingFinalSteps {
 
         response.then().assertThat().body(containsString(key1)).body(containsString(key2));
 
+        //get id from all the employees
+
 //        String payload = response.asString();
 //        JsonPath jp = new JsonPath(payload);
 //        int count = jp.getInt("Employees.size()");
@@ -282,9 +360,21 @@ public class apiTestingFinalSteps {
 //            String allEmployeesIDs = jp.getString("Employees[" + i + "].employee_id");
 //            System.out.println(allEmployeesIDs);
 //        }
+
+        //get gender from all the employees
+
+//        String response_string = response.asString();
+//        JsonObject response_getAllEmployees = JsonParser.parseString(response_string).getAsJsonObject();
+//        JsonArray array_ofAllEmployees = response_getAllEmployees.get("Employees").getAsJsonArray();
+//
+//        for (JsonElement data : array_ofAllEmployees) {
+//            JsonObject employee_data = data.getAsJsonObject();
+//            String employee_firstname = employee_data.get("emp_firstname").getAsString();
+//            System.out.println(employee_firstname);
+//        }
     }
 
-//    ---------------------------Scenario: Retrieve all Employees status
+    //    ---------------------------Scenario: Retrieve all Employees status
     @Given("a request is prepared to get all Employees status")
     public void a_request_is_prepared_to_get_all_Employees_status() {
         request = given()
@@ -300,6 +390,18 @@ public class apiTestingFinalSteps {
     @Then("it contains the value1 {string} and value2 {string}")
     public void it_contains_the_value1_and_value2(String value1, String value2) {
         response.then().assertThat().body(containsString(value1)).body(containsString(value2));
+
+        String response_string = response.asString();
+        JsonObject response_getAllEmployees = JsonParser.parseString(response_string).getAsJsonObject();
+        JsonElement Employee_status_list = response_getAllEmployees.get("Employee Status List");
+
+        String status_list = Employee_status_list.toString();
+//        System.out.println(status_list);
+
+        String Status = status_list.replace("[", "");
+        String status = Status.replace("]", "");
+        String[] Status_List = status.split(",");
+//        System.out.println("PRINTING: " + Status_List[2]);
     }
 }
 

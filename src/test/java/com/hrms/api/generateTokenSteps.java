@@ -1,4 +1,4 @@
-package com.hrms.api.Testing;
+package com.hrms.api;
 
 import com.hrms.utils.ApiConstants;
 import io.cucumber.java.en.Given;

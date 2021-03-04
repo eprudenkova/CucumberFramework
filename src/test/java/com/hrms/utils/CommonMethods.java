@@ -276,5 +276,4 @@ public class CommonMethods extends PageInitializer {
         }
         return allOptionsText;
     }
-
 }

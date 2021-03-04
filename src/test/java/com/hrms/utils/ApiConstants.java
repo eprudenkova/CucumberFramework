@@ -17,6 +17,9 @@ public class ApiConstants {
     public static final String APP_JSON = "application/json";
     public static final String AUTH = "Authorization";
 
+    public static final String CREATE_EMPLOYEE_JSON = System.getProperty("user.dir")+"/src/test/resources/JsonData/createUser.json";
+
+
 
 
 
