@@ -17,4 +17,4 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json" //generates json report
         })
 
-public class ApiRunner {}
+public class APIRunner {}

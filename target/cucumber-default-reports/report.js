@@ -14,9 +14,6 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
   "name": "a JWT is generated",
   "keyword": "Given "
@@ -101,17 +98,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "Creating an Employee");
-formatter.after({
-  "status": "passed"
-});
 formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "a JWT is generated",
@@ -197,17 +187,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png", "Retrieving the created Employee");
-formatter.after({
-  "status": "passed"
-});
 formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "a JWT is generated",
@@ -269,17 +252,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded2.png", "Update the created Employee");
-formatter.after({
-  "status": "passed"
-});
 formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "a JWT is generated",
@@ -341,17 +317,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded3.png", "Retrieving the updated Employee");
-formatter.after({
-  "status": "passed"
-});
 formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "a JWT is generated",
@@ -423,17 +392,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded4.png", "Partially updating the Employee");
-formatter.after({
-  "status": "passed"
-});
 formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "a JWT is generated",
@@ -505,17 +467,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded5.png", "Delete the created Employee");
-formatter.after({
-  "status": "passed"
-});
 formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "a JWT is generated",
@@ -577,17 +532,10 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded6.png", "Get all Employees");
-formatter.after({
-  "status": "passed"
-});
 formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
 });
 formatter.step({
   "name": "a JWT is generated",
@@ -647,10 +595,6 @@ formatter.match({
   "location": "com.hrms.api.apiTestingFinalSteps.it_contains_the_value1_and_value2(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded7.png", "Retrieve all Employees status");
-formatter.after({
   "status": "passed"
 });
 });
