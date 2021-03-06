@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hrms.runners.TestRunner" time="15.391" tests="8" errors="0" skipped="8" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/evgeniya/IdeaProjects/CucumberFramework/target/test-classes:/Users/evgeniya/IdeaProjects/CucumberFramework/target/classes:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/evgeniya/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/evgeniya/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/evgeniya/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/evgeniya/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/evgeniya/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/evgeniya/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/evgeniya/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/evgeniya/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/evgeniya/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/evgeniya/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/evgeniya/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/evgeniya/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/evgeniya/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/evgeniya/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/evgeniya/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/evgeniya/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/evgeniya/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/evgeniya/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/Users/evgeniya/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/evgeniya/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/evgeniya/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/evgeniya/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/evgeniya/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/evgeniya/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/evgeniya/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/evgeniya/.m2/repository/mysql/mysql-connector-java/8.0.23/mysql-connector-java-8.0.23.jar:/Users/evgeniya/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/evgeniya/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/evgeniya/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/evgeniya/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/evgeniya/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/evgeniya/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/evgeniya/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/evgeniya/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/evgeniya/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/evgeniya/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/evgeniya/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/evgeniya/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/evgeniya/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/evgeniya/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/evgeniya/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/Users/evgeniya/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/evgeniya/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/evgeniya/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/evgeniya/IdeaProjects/CucumberFramework/target/surefire/surefirebooter8013869195059440187.jar /Users/evgeniya/IdeaProjects/CucumberFramework/target/surefire 2021-03-06T13-46-42_304-jvmRun1 surefire4155534372780348575tmp surefire_07333625628041720687tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/evgeniya/IdeaProjects/CucumberFramework/target/test-classes:/Users/evgeniya/IdeaProjects/CucumberFramework/target/classes:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/evgeniya/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/evgeniya/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/evgeniya/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/evgeniya/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/evgeniya/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/evgeniya/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/evgeniya/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/evgeniya/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/evgeniya/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/evgeniya/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/evgeniya/.m2/repository/org/apache/poi/poi-ooxml/4.1.2/poi-ooxml-4.1.2.jar:/Users/evgeniya/.m2/repository/org/apache/poi/poi/4.1.2/poi-4.1.2.jar:/Users/evgeniya/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/evgeniya/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/evgeniya/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.1.2/poi-ooxml-schemas-4.1.2.jar:/Users/evgeniya/.m2/repository/org/apache/xmlbeans/xmlbeans/3.1.0/xmlbeans-3.1.0.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar:/Users/evgeniya/.m2/repository/com/github/virtuald/curvesapi/1.06/curvesapi-1.06.jar:/Users/evgeniya/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/evgeniya/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/Users/evgeniya/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/evgeniya/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/evgeniya/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/Users/evgeniya/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/evgeniya/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-java/5.7.0/cucumber-java-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-core/5.7.0/cucumber-core-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-gherkin/5.7.0/cucumber-gherkin-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-gherkin-vintage/5.7.0/cucumber-gherkin-vintage-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/tag-expressions/2.0.4/tag-expressions-2.0.4.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-expressions/8.3.1/cucumber-expressions-8.3.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-plugin/5.7.0/cucumber-plugin-5.7.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/docstring/5.7.0/docstring-5.7.0.jar:/Users/evgeniya/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/evgeniya/.m2/repository/io/cucumber/cucumber-junit/5.7.0/cucumber-junit-5.7.0.jar:/Users/evgeniya/.m2/repository/junit/junit/4.13/junit-4.13.jar:/Users/evgeniya/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/evgeniya/.m2/repository/mysql/mysql-connector-java/8.0.23/mysql-connector-java-8.0.23.jar:/Users/evgeniya/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/evgeniya/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/evgeniya/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/evgeniya/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/evgeniya/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/evgeniya/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/evgeniya/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/evgeniya/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/evgeniya/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/evgeniya/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/evgeniya/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/evgeniya/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/evgeniya/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/evgeniya/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/evgeniya/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/evgeniya/.m2/repository/com/jayway/jsonpath/json-path/2.5.0/json-path-2.5.0.jar:/Users/evgeniya/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/evgeniya/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/evgeniya/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/evgeniya"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/evgeniya/IdeaProjects/CucumberFramework"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="idea.version2020.1.1" value="true"/>
+    <property name="surefire.real.class.path" value="/Users/evgeniya/IdeaProjects/CucumberFramework/target/surefire/surefirebooter8013869195059440187.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_251-b08"/>
+    <property name="user.name" value="evgeniya"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/evgeniya/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/qz/8ytd8bw52kv5yxcm_fn0fpt80000gp/T/"/>
+    <property name="java.version" value="1.8.0_251"/>
+    <property name="user.dir" value="/Users/evgeniya/IdeaProjects/CucumberFramework"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/evgeniya/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.251-b08"/>
+    <property name="java.ext.dirs" value="/Users/evgeniya/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="Creating an Employee" classname="Syntax HRMS API Workflow" time="0">
+    <skipped message="The step &quot;a JWT is generated&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;a JWT is generated&quot;)&#10;public void a_JWT_is_generated() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@Given(&quot;a request is prepared to create an employee&quot;)&#10;public void a_request_is_prepared_to_create_an_employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;a POST call is made to create an employee&quot;)&#10;public void a_POST_call_is_made_to_create_an_employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the status code is {int}&quot;)&#10;public void the_status_code_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the employee is created contains key {string} and value {string}&quot;)&#10;public void the_employee_is_created_contains_key_and_value(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the employee ID {string} is stored in the global variable to be used for other calls&quot;)&#10;public void the_employee_ID_is_stored_in_the_global_variable_to_be_used_for_other_calls(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;a GET call is made to verify the data is updated for all employees {string} with&quot;)&#10;public void a_GET_call_is_made_to_verify_the_data_is_updated_for_all_employees_with(String string, io.cucumber.datatable.DataTable dataTable) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    // For automatic transformation, change DataTable to one of&#10;    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or&#10;    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,&#10;    // Double, Byte, Short, Long, BigInteger or BigDecimal.&#10;    //&#10;    // For other transformations you can register a DataTableType.&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;"/>
+    <system-out><![CDATA[
+@apiWorkflow
+Scenario: Creating an Employee                                                                              &amp#27;[90m# src/test/resources/features/apiWorkflow.feature:10&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma JWT is generated&amp#27;[0m                                                                                  &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma request is prepared to create an employee&amp#27;[0m                                                         &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33ma POST call is made to create an employee&amp#27;[0m                                                            &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mThen &amp#27;[0m&amp#27;[33mthe status code is 201&amp#27;[0m                                                                               &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe employee is created contains key "Message" and value "Entry Created"&amp#27;[0m                              &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe employee ID "Employee[0].employee_id" is stored in the global variable to be used for other calls&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33ma GET call is made to verify the data is updated for all employees "employee" with&amp#27;[0m                    &amp#27;[90m# null&amp#27;[0m
+
+    Embedding Creating an Employee [image/png 195820 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Mar 06, 2021 1:46:43 PM io.cucumber.junit.Cucumber <init>
+WARNING: By default Cucumber is running in --non-strict mode.
+This default will change to --strict and --non-strict will be removed.
+You can use --strict or @CucumberOptions(strict = true) to suppress this warning
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 33221
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 06, 2021 1:46:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Retrieving the created Employee" classname="Syntax HRMS API Workflow" time="0">
+    <skipped message="The step &quot;a JWT is generated&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;a JWT is generated&quot;)&#10;public void a_JWT_is_generated() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@Given(&quot;a request is prepared to retrieve the created Employee&quot;)&#10;public void a_request_is_prepared_to_retrieve_the_created_Employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;a GET call is made to retrieve the created Employee&quot;)&#10;public void a_GET_call_is_made_to_retrieve_the_created_Employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the status code is {int}&quot;)&#10;public void the_status_code_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;retrieved EmployeeID {string} matches the globally stored EmployeeID&quot;)&#10;public void retrieved_EmployeeID_matches_the_globally_stored_EmployeeID(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the retrieved data matched the data used to create the Employee&quot;)&#10;public void the_retrieved_data_matched_the_data_used_to_create_the_Employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the retrieved data at {string} matches the data used to create the employee with employee ID {string}&quot;)&#10;public void the_retrieved_data_at_matches_the_data_used_to_create_the_employee_with_employee_ID(String string, String string2, io.cucumber.datatable.DataTable dataTable) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    // For automatic transformation, change DataTable to one of&#10;    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or&#10;    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,&#10;    // Double, Byte, Short, Long, BigInteger or BigDecimal.&#10;    //&#10;    // For other transformations you can register a DataTableType.&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;"/>
+    <system-out><![CDATA[
+@apiWorkflow
+Scenario: Retrieving the created Employee                                                                                      &amp#27;[90m# src/test/resources/features/apiWorkflow.feature:22&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma JWT is generated&amp#27;[0m                                                                                                     &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma request is prepared to retrieve the created Employee&amp#27;[0m                                                                 &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33ma GET call is made to retrieve the created Employee&amp#27;[0m                                                                     &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mThen &amp#27;[0m&amp#27;[33mthe status code is 200&amp#27;[0m                                                                                                  &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mretrieved EmployeeID "employee[0].employee_id" matches the globally stored EmployeeID&amp#27;[0m                                    &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe retrieved data matched the data used to create the Employee&amp#27;[0m                                                          &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe retrieved data at "employee" matches the data used to create the employee with employee ID "employee[0].employee_id"&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
+
+    Embedding Retrieving the created Employee [image/png 195820 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 36841
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 06, 2021 1:46:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Update the created Employee" classname="Syntax HRMS API Workflow" time="0">
+    <skipped message="The step &quot;a JWT is generated&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;a JWT is generated&quot;)&#10;public void a_JWT_is_generated() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@Given(&quot;a request is prepared to update the Employee&quot;)&#10;public void a_request_is_prepared_to_update_the_Employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;a PUT call is made to update the Employee&quot;)&#10;public void a_PUT_call_is_made_to_update_the_Employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the status code is {int}&quot;)&#10;public void the_status_code_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the updated Employee contains key {string} and value {string}&quot;)&#10;public void the_updated_Employee_contains_key_and_value(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;"/>
+    <system-out><![CDATA[
+@apiWorkflow
+Scenario: Update the created Employee                                       &amp#27;[90m# src/test/resources/features/apiWorkflow.feature:33&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma JWT is generated&amp#27;[0m                                                  &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma request is prepared to update the Employee&amp#27;[0m                        &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33ma PUT call is made to update the Employee&amp#27;[0m                            &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mThen &amp#27;[0m&amp#27;[33mthe status code is 201&amp#27;[0m                                               &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe updated Employee contains key "Message" and value "Entry updated"&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
+
+    Embedding Update the created Employee [image/png 195820 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 45021
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 06, 2021 1:46:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Retrieving the updated Employee" classname="Syntax HRMS API Workflow" time="0">
+    <skipped message="The step &quot;a JWT is generated&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;a JWT is generated&quot;)&#10;public void a_JWT_is_generated() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@Given(&quot;a request is prepared to retrieve the updated Employee&quot;)&#10;public void a_request_is_prepared_to_retrieve_the_updated_Employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;a GET call is made to retrieve the updated Employee&quot;)&#10;public void a_GET_call_is_made_to_retrieve_the_updated_Employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the status code is {int}&quot;)&#10;public void the_status_code_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the retrieved Employee_Middle_Name {string} matches the globally stored employee middle name&quot;)&#10;public void the_retrieved_Employee_Middle_Name_matches_the_globally_stored_employee_middle_name(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;"/>
+    <system-out><![CDATA[
+@apiWorkflow
+Scenario: Retrieving the updated Employee                                                                               &amp#27;[90m# src/test/resources/features/apiWorkflow.feature:39&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma JWT is generated&amp#27;[0m                                                                                              &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma request is prepared to retrieve the updated Employee&amp#27;[0m                                                          &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33ma GET call is made to retrieve the updated Employee&amp#27;[0m                                                              &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mThen &amp#27;[0m&amp#27;[33mthe status code is 200&amp#27;[0m                                                                                           &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe retrieved Employee_Middle_Name "employee[0].emp_middle_name" matches the globally stored employee middle name&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
+
+    Embedding Retrieving the updated Employee [image/png 195820 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 4654
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 06, 2021 1:46:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Partially updating the Employee" classname="Syntax HRMS API Workflow" time="0">
+    <skipped message="The step &quot;a JWT is generated&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;a JWT is generated&quot;)&#10;public void a_JWT_is_generated() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@Given(&quot;a request is prepared to partially update the Employee&quot;)&#10;public void a_request_is_prepared_to_partially_update_the_Employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;a PATCH call is made to partially update the Employee&quot;)&#10;public void a_PATCH_call_is_made_to_partially_update_the_Employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the status code is {int}&quot;)&#10;public void the_status_code_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the partially updated Employee contains key {string} and value {string}&quot;)&#10;public void the_partially_updated_Employee_contains_key_and_value(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the retrieved Employee_First_Name {string} matches the globally stored employee middle name&quot;)&#10;public void the_retrieved_Employee_First_Name_matches_the_globally_stored_employee_middle_name(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;"/>
+    <system-out><![CDATA[
+@apiWorkflow
+Scenario: Partially updating the Employee                                                                            &amp#27;[90m# src/test/resources/features/apiWorkflow.feature:45&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma JWT is generated&amp#27;[0m                                                                                           &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma request is prepared to partially update the Employee&amp#27;[0m                                                       &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33ma PATCH call is made to partially update the Employee&amp#27;[0m                                                         &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mThen &amp#27;[0m&amp#27;[33mthe status code is 201&amp#27;[0m                                                                                        &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe partially updated Employee contains key "Message" and value "Entry updated"&amp#27;[0m                                &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe retrieved Employee_First_Name "employee[0].emp_firstname" matches the globally stored employee middle name&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
+
+    Embedding Partially updating the Employee [image/png 195820 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 15582
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 06, 2021 1:46:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Delete the created Employee" classname="Syntax HRMS API Workflow" time="0">
+    <skipped message="The step &quot;a JWT is generated&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;a JWT is generated&quot;)&#10;public void a_JWT_is_generated() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@Given(&quot;a request is prepared to delete the Employee&quot;)&#10;public void a_request_is_prepared_to_delete_the_Employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;a DELETE call is made to delete the Employee&quot;)&#10;public void a_DELETE_call_is_made_to_delete_the_Employee() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the status code is {int}&quot;)&#10;public void the_status_code_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the Employee is deleted contains key {string} and value {string}&quot;)&#10;public void the_Employee_is_deleted_contains_key_and_value(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the {string} is the same as the one stored in global&quot;)&#10;public void the_is_the_same_as_the_one_stored_in_global(String string) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;"/>
+    <system-out><![CDATA[
+@apiWorkflow
+Scenario: Delete the created Employee                                          &amp#27;[90m# src/test/resources/features/apiWorkflow.feature:52&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma JWT is generated&amp#27;[0m                                                     &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma request is prepared to delete the Employee&amp#27;[0m                           &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33ma DELETE call is made to delete the Employee&amp#27;[0m                            &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mThen &amp#27;[0m&amp#27;[33mthe status code is 201&amp#27;[0m                                                  &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe Employee is deleted contains key "message" and value "Entry deleted"&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mthe "employee[0].employee_id" is the same as the one stored in global&amp#27;[0m    &amp#27;[90m# null&amp#27;[0m
+
+    Embedding Delete the created Employee [image/png 195820 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 41473
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 06, 2021 1:46:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Get all Employees" classname="Syntax HRMS API Workflow" time="0">
+    <skipped message="The step &quot;a JWT is generated&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;a JWT is generated&quot;)&#10;public void a_JWT_is_generated() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@Given(&quot;a request is prepared to get all Employees&quot;)&#10;public void a_request_is_prepared_to_get_all_Employees() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;a GET call is made to get all Employees&quot;)&#10;public void a_GET_call_is_made_to_get_all_Employees() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the status code is {int}&quot;)&#10;public void the_status_code_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;it contains key1 {string} and key2 {string}&quot;)&#10;public void it_contains_key1_and_key2(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;"/>
+    <system-out><![CDATA[
+@apiWorkflow
+Scenario: Get all Employees                                   &amp#27;[90m# src/test/resources/features/apiWorkflow.feature:59&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma JWT is generated&amp#27;[0m                                    &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma request is prepared to get all Employees&amp#27;[0m            &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33ma GET call is made to get all Employees&amp#27;[0m                &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mThen &amp#27;[0m&amp#27;[33mthe status code is 200&amp#27;[0m                                 &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mit contains key1 "Total Employees" and key2 "Employees"&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
+
+    Embedding Get all Employees [image/png 195820 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 38784
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 06, 2021 1:46:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Retrieve all Employees status" classname="Syntax HRMS API Workflow" time="0">
+    <skipped message="The step &quot;a JWT is generated&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;a JWT is generated&quot;)&#10;public void a_JWT_is_generated() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@Given(&quot;a request is prepared to get all Employees status&quot;)&#10;public void a_request_is_prepared_to_get_all_Employees_status() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;a GET call is made to retrieve all Employees status&quot;)&#10;public void a_GET_call_is_made_to_retrieve_all_Employees_status() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the status code is {int}&quot;)&#10;public void the_status_code_is(Integer int1) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;it contains the value1 {string} and value2 {string}&quot;)&#10;public void it_contains_the_value1_and_value2(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;"/>
+    <system-out><![CDATA[
+@apiWorkflow
+Scenario: Retrieve all Employees status                     &amp#27;[90m# src/test/resources/features/apiWorkflow.feature:65&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma JWT is generated&amp#27;[0m                                  &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33ma request is prepared to get all Employees status&amp#27;[0m   &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33ma GET call is made to retrieve all Employees status&amp#27;[0m  &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mThen &amp#27;[0m&amp#27;[33mthe status code is 200&amp#27;[0m                               &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mit contains the value1 "Employee" and value2 "Worker"&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
+
+    Embedding Retrieve all Employees status [image/png 195820 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 7211
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 06, 2021 1:46:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

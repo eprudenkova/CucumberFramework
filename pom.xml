@@ -94,7 +94,7 @@
 <!--                        we need clean target folder before-->
 <!--                        CucumberFramework - Lifecycle - clean (double click to clean)-->
 <!--                        CucumberFramework - Lifecycle - test (double click to run test)-->
-                        <include>**/*SmokeTestRunner.java</include>
+                        <include>**/*TestRunner.java</include>
                     </includes>
 <!--                    "true" to ignore a failure during testing. Its use is NOT RECOMMENDED, but quite convenient on occasion. Default value is: false-->
                     <testFailureIgnore>true</testFailureIgnore>
@@ -121,7 +121,7 @@
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <jsonFiles>
                                 <!-- supports wildcard or name pattern -->
-                                <param>**/*.json</param>
+                                <param>**/*cucumber.json</param>
                             </jsonFiles>
                         </configuration>
                     </execution>

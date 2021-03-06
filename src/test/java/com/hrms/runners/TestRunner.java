@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(// configuration for our tests
         features = "src/test/resources/features",// need to give a path for our feature file
-        glue = "com/hrms/stepDefinitions",// trying to connect all our implementation code for Gherkin steps
+        glue = "com/hrms",// trying to connect all our implementation code for Gherkin steps
         dryRun = false, //when set as true, will run over the feature steps and show unimplemented steps in console
         tags = {"@hw2"}, //adding tag
         strict = false, //when set as true, it will fail the execution when undefined step is found.
