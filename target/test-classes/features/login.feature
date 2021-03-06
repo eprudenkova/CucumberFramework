@@ -16,14 +16,14 @@ Feature: Login Functionality
     And click on login button
     Then verify error message
 
-  @hw
+  @hw1
   Scenario: Login with empty username
     When leave blank username
     When enter valid password
     And click on login button
     Then verify error message for empty username
 
-  @hw
+  @hw2
   Scenario: Login with empty password
     When enter valid username
     When leave blank password
